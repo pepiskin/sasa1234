@@ -1,0 +1,807 @@
+<html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>Frosten — холодильники нового поколения</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<header>
+		<div class="header-left">
+			<!-- Встроенный SVG-логотип (можно заменить на свой файл, если нужно) -->
+			<a href="#" class="logo-link" aria-label="Frosten home">
+				<img src="/img/logo.jpg" alt="логотип">
+			</a>
+		</div>
+
+		<nav class="menu__desk">
+			<ul>
+				<li><a href="#about">О компании</a></li>
+				<li><a href="#products">Продукция</a></li>
+				<li><a href="#reviews">Отзывы</a></li>
+				<li><a href="#partners">Партнёры</a></li>
+				<li><a href="#order">Онлайн-заказ</a></li>
+				<li><a href="#contact">Контакты</a></li>
+			</ul>
+		</nav>
+
+		<nav class="menu__mob">
+			<img src="/img/menu-button.png" alt="btn" width="40" height="40">
+			<ul class="menu__wrap">
+				<li><a href="#about">О компании</a></li>
+				<li><a href="#products">Продукция</a></li>
+				<li><a href="#reviews">Отзывы</a></li>
+				<li><a href="#partners">Партнёры</a></li>
+				<li><a href="#order">Онлайн-заказ</a></li>
+				<li><a href="#contact">Контакты</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<section id="hero" class="hero">
+			<div class="hero-inner">
+				<h1>Холодильники нового поколения</h1>
+				<p>Эффективность, надёжность и современный дизайн от Frosten — для дома и бизнеса.</p>
+				<div class="hero-cta">
+					<button id="learnMoreBtn" class="btn">Узнать больше</button>
+					<a href="#products" class="btn btn-outline">Смотреть продукцию</a>
+				</div>
+			</div>
+		</section>
+
+		<section id="about" class="section about">
+			<h2>О компании</h2>
+			<div class="about-grid">
+				<div class="about-text">
+					<p><strong>Frosten</strong> — российский производитель холодильного оборудования с более чем 20-летним
+						опытом. Наша миссия — создавать энергоэффективные, надёжные и эстетичные холодильные решения для дома,
+						кафе и магазинов. Мы соединяем технологичную инженерию, экологичные материалы и современный дизайн.
+					</p>
+					<p>Ценности: качество, экологичность, клиентоориентированность и постоянное улучшение процессов
+						производства.</p>
+					<p>Мы работаем с крупными ритейл-партнёрами и малыми предприятиями, предлагаем гарантийное и сервисное
+						обслуживание.</p>
+				</div>
+
+				<aside class="team">
+					<h3>Наша команда</h3>
+
+					<div class="team-member">
+						<div class="member-meta">
+							<strong>Генеральный директор</strong>
+							<span class="member-name">Борисова Дарья Павловна</span>
+						</div>
+						<p class="member-desc">
+							Руководит стратегией компании и координирует все направления: производство, маркетинг, продажи,
+							финансы. Принимает ключевые решения, представляет компанию перед партнёрами и контролирует качество
+							продукции.
+						</p>
+					</div>
+
+					<div class="team-member">
+						<div class="member-meta">
+							<strong>Маркетолог</strong>
+							<span class="member-name">Ковалёв Сергей Максимович</span>
+						</div>
+						<p class="member-desc">
+							Анализирует рынок, разрабатывает маркетинговую стратегию, ведёт рекламные кампании, SMM и создаёт
+							контент для продвижения продуктов Frosten.
+						</p>
+					</div>
+
+					<div class="team-member">
+						<div class="member-meta">
+							<strong>Менеджер по продажам</strong>
+							<span class="member-name">Смирнова Марина Алексеевна</span>
+						</div>
+						<p class="member-desc">
+							Консультирует клиентов, сопровождает сделки от запроса до доставки, выстраивает долгосрочные
+							отношения и выполняет план продаж.
+						</p>
+					</div>
+
+					<div class="team-member">
+						<div class="member-meta">
+							<strong>Бухгалтер</strong>
+							<span class="member-name">Иванов Алексей Дмитриевич</span>
+						</div>
+						<p class="member-desc">
+							Ведёт финансовый и налоговый учёт, формирует отчётность и контролирует платежи, отвечает за
+							корректность финансовых данных компании.
+						</p>
+					</div>
+
+					<div class="team-member">
+						<div class="member-meta">
+							<strong>Производственный руководитель</strong>
+							<span class="member-name">Петров Виктор Андреевич</span>
+						</div>
+						<p class="member-desc">
+							Организует производство, контролирует качество на всех этапах, внедряет технологические улучшения и
+							отвечает за безопасность и эффективность процессов.
+						</p>
+					</div>
+
+				</aside>
+			</div>
+		</section>
+
+		<section id="products" class="section products">
+			<h2>Наша продукция</h2>
+
+			<div class="product-controls">
+				<input id="productSearch" type="search" placeholder="Поиск модели или типа (например: 'French Door')" />
+			</div>
+
+			<div class="product-grid" id="productGrid">
+				<!-- Карточки продуктов: сгенерированы ниже статически -->
+
+				<!-- Example product card format. Далее идут все 25 карточек -->
+
+				<!-- Model-01 -->
+				<article class="product" data-model="Model-01" data-type="Двухкамерный">
+					<div class="product-media">
+						<img src="https://cdn.pixabay.com/photo/2015/08/12/10/14/fridge-884720_1280.jpg" alt="Model-01">
+					</div>
+					<div class="product-body">
+						<h3>Model-01</h3>
+						<p class="ptype">Двухкамерный</p>
+						<ul class="specs">
+							<li>Общий объём: <strong>488 л</strong></li>
+							<li>Холодильная камера: <strong>166 л</strong></li>
+							<li>Морозильная камера: <strong>168 л</strong></li>
+							<li>Энергия: <strong>A++</strong></li>
+							<li>Шум: <strong>39 дБ</strong></li>
+						</ul>
+						<div class="product-actions">
+							<button class="btn add-to-order" data-model="Model-01">Добавить в заказ</button>
+						</div>
+					</div>
+				</article>
+
+				<!-- Model-02 -->
+				<article class="product" data-model="Model-02" data-type="Двухкамерный">
+					<div class="product-media">
+						<img src="https://cdn.pixabay.com/photo/2016/10/05/19/46/refrigerator-1715259_1280.jpg"
+							alt="Model-02">
+					</div>
+					<div class="product-body">
+						<h3>Model-02</h3>
+						<p class="ptype">Двухкамерный</p>
+						<ul class="specs">
+							<li>Общий объём: <strong>266 л</strong></li>
+							<li>Холодильная камера: <strong>389 л</strong></li>
+							<li>Морозильная камера: <strong>161 л</strong></li>
+							<li>Энергия: <strong>B</strong></li>
+							<li>Шум: <strong>45 дБ</strong></li>
+						</ul>
+						<div class="product-actions">
+							<button class="btn add-to-order" data-model="Model-02">Добавить в заказ</button>
+						</div>
+					</div>
+				</article>
+
+				<!-- Model-03 -->
+				<article class="product" data-model="Model-03" data-type="Двухкамерный">
+					<div class="product-media">
+						<img src="https://cdn.pixabay.com/photo/2016/12/11/02/09/refrigerator-1897436_1280.jpg"
+							alt="Model-03">
+					</div>
+					<div class="product-body">
+						<h3>Model-03</h3>
+						<p class="ptype">Двухкамерный</p>
+						<ul class="specs">
+							<li>Общий объём: <strong>436 л</strong></li>
+							<li>Холодильная камера: <strong>295 л</strong></li>
+							<li>Морозильная камера: <strong>55 л</strong></li>
+							<li>Энергия: <strong>B</strong></li>
+							<li>Шум: <strong>36 дБ</strong></li>
+						</ul>
+						<div class="product-actions">
+							<button class="btn add-to-order" data-model="Model-03">Добавить в заказ</button>
+						</div>
+					</div>
+				</article>
+
+				<!-- Model-04 -->
+				<article class="product" data-model="Model-04" data-type="Side-by-Side">
+					<div class="product-media">
+						<img src="https://cdn.pixabay.com/photo/2018/02/17/19/38/kitchen-3165053_1280.jpg" alt="Model-04">
+					</div>
+					<div class="product-body">
+						<h3>Model-04</h3>
+						<p class="ptype">Side-by-Side</p>
+						<ul class="specs">
+							<li>Общий объём: <strong>548 л</strong></li>
+							<li>Холодильная камера: <strong>358 л</strong></li>
+							<li>Морозильная камера: <strong>132 л</strong></li>
+							<li>Энергия: <strong>B</strong></li>
+							<li>Шум: <strong>36 дБ</strong></li>
+						</ul>
+						<div class="product-actions">
+							<button class="btn add-to-order" data-model="Model-04">Добавить в заказ</button>
+						</div>
+					</div>
+				</article>
+
+				<!-- Model-05 -->
+				<article class="product" data-model="Model-05" data-type="French Door">
+					<div class="product-media">
+						<img src="https://cdn.pixabay.com/photo/2021/07/01/15/35/refrigerator-6380690_1280.jpg"
+							alt="Model-05">
+					</div>
+					<div class="product-body">
+						<h3>Model-05</h3>
+						<p class="ptype">French Door</p>
+						<ul class="specs">
+							<li>Общий объём: <strong>519 л</strong></li>
+							<li>Холодильная камера: <strong>302 л</strong></li>
+							<li>Морозильная камера: <strong>103 л</strong></li>
+							<li>Энергия: <strong>B</strong></li>
+							<li>Шум: <strong>41 дБ</strong></li>
+						</ul>
+						<div class="product-actions">
+							<button class="btn add-to-order" data-model="Model-05">Добавить в заказ</button>
+						</div>
+					</div>
+				</article>
+
+				<!-- Model-06 -->
+				<article class="product" data-model="Model-06" data-type="Двухкамерный">
+					<div class="product-media">
+						<img src="https://cdn.pixabay.com/photo/2017/02/01/10/37/refrigerator-2034416_1280.jpg"
+							alt="Model-06">
+					</div>
+					<div class="product-body">
+						<h3>Model-06</h3>
+						<p class="ptype">Двухкамерный</p>
+						<ul class="specs">
+							<li>Общий объём: <strong>497 л</strong></li>
+							<li>Холодильная камера: <strong>338 л</strong></li>
+							<li>Морозильная камера: <strong>134 л</strong></li>
+							<li>Энергия: <strong>B</strong></li>
+							<li>Шум: <strong>39 дБ</strong></li>
+						</ul>
+						<div class="product-actions">
+							<button class="btn add-to-order" data-model="Model-06">Добавить в заказ</button>
+						</div>
+					</div>
+				</article>
+
+				<!-- Model-07 -->
+				<article class="product" data-model="Model-07" data-type="French Door">
+					<div class="product-media">
+						<img src="https://cdn.pixabay.com/photo/2019/03/07/15/04/freezer-4039540_1280.jpg" alt="Model-07">
+					</div>
+					<div class="product-body">
+						<h3>Model-07</h3>
+						<p class="ptype">French Door</p>
+						<ul class="specs">
+							<li>Общий объём: <strong>228 л</strong></li>
+							<li>Холодильная камера: <strong>136 л</strong></li>
+							<li>Морозильная камера: <strong>116 л</strong></li>
+							<li>Энергия: <strong>A+</strong></li>
+							<li>Шум: <strong>43 дБ</strong></li>
+						</ul>
+						<div class="product-actions">
+							<button class="btn add-to-order" data-model="Model-07">Добавить в заказ</button>
+						</div>
+					</div>
+				</article>
+
+				<!-- Model-08 -->
+				<article class="product" data-model="Model-08" data-type="Однокамерный">
+					<div class="product-media">
+						<img src="https://cdn.pixabay.com/photo/2014/04/02/10/10/fridge-304727_1280.png" alt="Model-08">
+					</div>
+					<div class="product-body">
+						<h3>Model-08</h3>
+						<p class="ptype">Однокамерный</p>
+						<ul class="specs">
+							<li>Общий объём: <strong>466 л</strong></li>
+							<li>Холодильная камера: <strong>224 л</strong></li>
+							<li>Морозильная камера: <strong>127 л</strong></li>
+							<li>Энергия: <strong>A+</strong></li>
+							<li>Шум: <strong>35 дБ</strong></li>
+						</ul>
+						<div class="product-actions">
+							<button class="btn add-to-order" data-model="Model-08">Добавить в заказ</button>
+						</div>
+					</div>
+				</article>
+
+				<!-- Model-09 -->
+				<article class="product" data-model="Model-09" data-type="French Door">
+					<div class="product-media">
+						<img src="https://cdn.pixabay.com/photo/2015/06/24/15/45/refrigerator-820739_1280.jpg" alt="Model-09">
+					</div>
+					<div class="product-body">
+						<h3>Model-09</h3>
+						<p class="ptype">French Door</p>
+						<ul class="specs">
+							<li>Общий объём: <strong>549 л</strong></li>
+							<li>Холодильная камера: <strong>376 л</strong></li>
+							<li>Морозильная камера: <strong>110 л</strong></li>
+							<li>Энергия: <strong>A+</strong></li>
+							<li>Шум: <strong>37 дБ</strong></li>
+						</ul>
+						<div class="product-actions">
+							<button class="btn add-to-order" data-model="Model-09">Добавить в заказ</button>
+						</div>
+					</div>
+				</article>
+
+				<!-- Model-10 -->
+				<article class="product" data-model="Model-10" data-type="French Door">
+					<div class="product-media">
+						<img src="https://cdn.pixabay.com/photo/2017/07/16/11/40/kitchen-2506656_1280.jpg" alt="Model-10">
+					</div>
+					<div class="product-body">
+						<h3>Model-10</h3>
+						<p class="ptype">French Door</p>
+						<ul class="specs">
+							<li>Общий объём: <strong>578 л</strong></li>
+							<li>Холодильная камера: <strong>174 л</strong></li>
+							<li>Морозильная камера: <strong>171 л</strong></li>
+							<li>Энергия: <strong>A</strong></li>
+							<li>Шум: <strong>44 дБ</strong></li>
+						</ul>
+						<div class="product-actions">
+							<button class="btn add-to-order" data-model="Model-10">Добавить в заказ</button>
+						</div>
+					</div>
+				</article>
+
+				<!-- Model-11 -->
+				<article class="product" data-model="Model-11" data-type="Двухкамерный">
+					<div class="product-media">
+						<img src="https://cdn.pixabay.com/photo/2016/11/29/06/15/kitchen-1867306_1280.jpg" alt="Model-11">
+					</div>
+					<div class="product-body">
+						<h3>Model-11</h3>
+						<p class="ptype">Двухкамерный</p>
+						<ul class="specs">
+							<li>Общий объём: <strong>600 л</strong></li>
+							<li>Холодильная камера: <strong>211 л</strong></li>
+							<li>Морозильная камера: <strong>187 л</strong></li>
+							<li>Энергия: <strong>B</strong></li>
+							<li>Шум: <strong>42 дБ</strong></li>
+						</ul>
+						<div class="product-actions">
+							<button class="btn add-to-order" data-model="Model-11">Добавить в заказ</button>
+						</div>
+					</div>
+				</article>
+
+				<!-- Model-12 -->
+				<article class="product" data-model="Model-12" data-type="Однокамерный">
+					<div class="product-media">
+						<img src="https://cdn.pixabay.com/photo/2016/03/09/09/30/refrigerator-1246268_1280.jpg"
+							alt="Model-12">
+					</div>
+					<div class="product-body">
+						<h3>Model-12</h3>
+						<p class="ptype">Однокамерный</p>
+						<ul class="specs">
+							<li>Общий объём: <strong>242 л</strong></li>
+							<li>Холодильная камера: <strong>373 л</strong></li>
+							<li>Морозильная камера: <strong>55 л</strong></li>
+							<li>Энергия: <strong>A+</strong></li>
+							<li>Шум: <strong>39 дБ</strong></li>
+						</ul>
+						<div class="product-actions">
+							<button class="btn add-to-order" data-model="Model-12">Добавить в заказ</button>
+						</div>
+					</div>
+				</article>
+
+				<!-- Model-13 -->
+				<article class="product" data-model="Model-13" data-type="Side-by-Side">
+					<div class="product-media">
+						<img src="https://cdn.pixabay.com/photo/2018/07/18/17/35/refrigerator-3547525_1280.jpg"
+							alt="Model-13">
+					</div>
+					<div class="product-body">
+						<h3>Model-13</h3>
+						<p class="ptype">Side-by-Side</p>
+						<ul class="specs">
+							<li>Общий объём: <strong>522 л</strong></li>
+							<li>Холодильная камера: <strong>147 л</strong></li>
+							<li>Морозильная камера: <strong>180 л</strong></li>
+							<li>Энергия: <strong>A++</strong></li>
+							<li>Шум: <strong>39 дБ</strong></li>
+						</ul>
+						<div class="product-actions">
+							<button class="btn add-to-order" data-model="Model-13">Добавить в заказ</button>
+						</div>
+					</div>
+				</article>
+
+				<!-- Model-14 -->
+				<article class="product" data-model="Model-14" data-type="Двухкамерный">
+					<div class="product-media">
+						<img src="https://cdn.pixabay.com/photo/2017/05/10/17/17/refrigerator-2307709_1280.jpg"
+							alt="Model-14">
+					</div>
+					<div class="product-body">
+						<h3>Model-14</h3>
+						<p class="ptype">Двухкамерный</p>
+						<ul class="specs">
+							<li>Общий объём: <strong>265 л</strong></li>
+							<li>Холодильная камера: <strong>301 л</strong></li>
+							<li>Морозильная камера: <strong>159 л</strong></li>
+							<li>Энергия: <strong>A</strong></li>
+							<li>Шум: <strong>38 дБ</strong></li>
+						</ul>
+						<div class="product-actions">
+							<button class="btn add-to-order" data-model="Model-14">Добавить в заказ</button>
+						</div>
+					</div>
+				</article>
+
+				<!-- Model-15 -->
+				<article class="product" data-model="Model-15" data-type="Side-by-Side">
+					<div class="product-media">
+						<img src="https://cdn.pixabay.com/photo/2016/03/30/19/54/kitchen-1294676_1280.jpg" alt="Model-15">
+					</div>
+					<div class="product-body">
+						<h3>Model-15</h3>
+						<p class="ptype">Side-by-Side</p>
+						<ul class="specs">
+							<li>Общий объём: <strong>571 л</strong></li>
+							<li>Холодильная камера: <strong>182 л</strong></li>
+							<li>Морозильная камера: <strong>171 л</strong></li>
+							<li>Энергия: <strong>B</strong></li>
+							<li>Шум: <strong>39 дБ</strong></li>
+						</ul>
+						<div class="product-actions">
+							<button class="btn add-to-order" data-model="Model-15">Добавить в заказ</button>
+						</div>
+					</div>
+				</article>
+
+				<!-- Model-16 -->
+				<article class="product" data-model="Model-16" data-type="Двухкамерный">
+					<div class="product-media">
+						<img src="https://cdn.pixabay.com/photo/2016/11/19/14/00/kitchen-1846080_1280.jpg" alt="Model-16">
+					</div>
+					<div class="product-body">
+						<h3>Model-16</h3>
+						<p class="ptype">Двухкамерный</p>
+						<ul class="specs">
+							<li>Общий объём: <strong>502 л</strong></li>
+							<li>Холодильная камера: <strong>203 л</strong></li>
+							<li>Морозильная камера: <strong>79 л</strong></li>
+							<li>Энергия: <strong>B</strong></li>
+							<li>Шум: <strong>44 дБ</strong></li>
+						</ul>
+						<div class="product-actions">
+							<button class="btn add-to-order" data-model="Model-16">Добавить в заказ</button>
+						</div>
+					</div>
+				</article>
+
+				<!-- Model-17 -->
+				<article class="product" data-model="Model-17" data-type="Side-by-Side">
+					<div class="product-media">
+						<img src="https://cdn.pixabay.com/photo/2015/11/19/21/12/refrigerator-1051714_1280.jpg"
+							alt="Model-17">
+					</div>
+					<div class="product-body">
+						<h3>Model-17</h3>
+						<p class="ptype">Side-by-Side</p>
+						<ul class="specs">
+							<li>Общий объём: <strong>418 л</strong></li>
+							<li>Холодильная камера: <strong>355 л</strong></li>
+							<li>Морозильная камера: <strong>150 л</strong></li>
+							<li>Энергия: <strong>A++</strong></li>
+							<li>Шум: <strong>38 дБ</strong></li>
+						</ul>
+						<div class="product-actions">
+							<button class="btn add-to-order" data-model="Model-17">Добавить в заказ</button>
+						</div>
+					</div>
+				</article>
+
+				<!-- Model-18 -->
+				<article class="product" data-model="Model-18" data-type="Side-by-Side">
+					<div class="product-media">
+						<img src="https://cdn.pixabay.com/photo/2017/06/13/10/15/kitchen-2400328_1280.jpg" alt="Model-18">
+					</div>
+					<div class="product-body">
+						<h3>Model-18</h3>
+						<p class="ptype">Side-by-Side</p>
+						<ul class="specs">
+							<li>Общий объём: <strong>428 л</strong></li>
+							<li>Холодильная камера: <strong>100 л</strong></li>
+							<li>Морозильная камера: <strong>145 л</strong></li>
+							<li>Энергия: <strong>A</strong></li>
+							<li>Шум: <strong>40 дБ</strong></li>
+						</ul>
+						<div class="product-actions">
+							<button class="btn add-to-order" data-model="Model-18">Добавить в заказ</button>
+						</div>
+					</div>
+				</article>
+
+				<!-- Model-19 -->
+				<article class="product" data-model="Model-19" data-type="Side-by-Side">
+					<div class="product-media">
+						<img src="https://cdn.pixabay.com/photo/2015/01/20/13/13/refrigerator-604141_1280.jpg" alt="Model-19">
+					</div>
+					<div class="product-body">
+						<h3>Model-19</h3>
+						<p class="ptype">Side-by-Side</p>
+						<ul class="specs">
+							<li>Общий объём: <strong>514 л</strong></li>
+							<li>Холодильная камера: <strong>396 л</strong></li>
+							<li>Морозильная камера: <strong>53 л</strong></li>
+							<li>Энергия: <strong>B</strong></li>
+							<li>Шум: <strong>41 дБ</strong></li>
+						</ul>
+						<div class="product-actions">
+							<button class="btn add-to-order" data-model="Model-19">Добавить в заказ</button>
+						</div>
+					</div>
+				</article>
+
+				<!-- Model-20 -->
+				<article class="product" data-model="Model-20" data-type="Однокамерный">
+					<div class="product-media">
+						<img src="https://cdn.
+								pixabay.com/photo/2014/12/21/23/14/kitchen-576125_1280.jpg" alt="Model-20">
+					</div>
+					<div class="product-body">
+						<h3>Model-20</h3>
+						<p class="ptype">Однокамерный</p>
+						<ul class="specs">
+							<li>Общий объём: <strong>600 л</strong></li>
+							<li>Холодильная камера: <strong>291 л</strong></li>
+							<li>Морозильная камера: <strong>80 л</strong></li>
+							<li>Энергия: <strong>A++</strong></li>
+							<li>Шум: <strong>42 дБ</strong></li>
+						</ul>
+						<div class="product-actions">
+							<button class="btn add-to-order" data-model="Model-20">Добавить в заказ</button>
+						</div>
+					</div>
+				</article>
+
+				<!-- Model-21 -->
+				<article class="product" data-model="Model-21" data-type="Side-by-Side">
+					<div class="product-media">
+						<img src="https://cdn.pixabay.com/photo/2015/09/02/13/21/refrigerator-919198_1280.jpg" alt="Model-21">
+					</div>
+					<div class="product-body">
+						<h3>Model-21</h3>
+						<p class="ptype">Side-by-Side</p>
+						<ul class="specs">
+							<li>Общий объём: <strong>363 л</strong></li>
+							<li>Холодильная камера: <strong>189 л</strong></li>
+							<li>Морозильная камера: <strong>118 л</strong></li>
+							<li>Энергия: <strong>B</strong></li>
+							<li>Шум: <strong>41 дБ</strong></li>
+						</ul>
+						<div class="product-actions">
+							<button class="btn add-to-order" data-model="Model-21">Добавить в заказ</button>
+						</div>
+					</div>
+				</article>
+
+				<!-- Model-22 -->
+				<article class="product" data-model="Model-22" data-type="Однокамерный">
+					<div class="product-media">
+						<img src="https://cdn.pixabay.com/photo/2017/03/30/13/22/kitchen-2182419_1280.jpg" alt="Model-22">
+					</div>
+					<div class="product-body">
+						<h3>Model-22</h3>
+						<p class="ptype">Однокамерный</p>
+						<ul class="specs">
+							<li>Общий объём: <strong>269 л</strong></li>
+							<li>Холодильная камера: <strong>354 л</strong></li>
+							<li>Морозильная камера: <strong>200 л</strong></li>
+							<li>Энергия: <strong>A</strong></li>
+							<li>Шум: <strong>44 дБ</strong></li>
+						</ul>
+						<div class="product-actions">
+							<button class="btn add-to-order" data-model="Model-22">Добавить в заказ</button>
+						</div>
+					</div>
+				</article>
+
+				<!-- Model-23 -->
+				<article class="product" data-model="Model-23" data-type="Side-by-Side">
+					<div class="product-media">
+						<img src="https://cdn.pixabay.com/photo/2018/08/07/08/20/fridge-3580354_1280.jpg" alt="Model-23">
+					</div>
+					<div class="product-body">
+						<h3>Model-23</h3>
+						<p class="ptype">Side-by-Side</p>
+						<ul class="specs">
+							<li>Общий объём: <strong>473 л</strong></li>
+							<li>Холодильная камера: <strong>240 л</strong></li>
+							<li>Морозильная камера: <strong>114 л</strong></li>
+							<li>Энергия: <strong>A+</strong></li>
+							<li>Шум: <strong>38 дБ</strong></li>
+						</ul>
+						<div class="product-actions">
+							<button class="btn add-to-order" data-model="Model-23">Добавить в заказ</button>
+						</div>
+					</div>
+				</article>
+
+				<!-- Model-24 -->
+				<article class="product" data-model="Model-24" data-type="French Door">
+					<div class="product-media">
+						<img src="https://cdn.pixabay.com/photo/2014/12/21/23/14/kitchen-576131_1280.jpg" alt="Model-24">
+					</div>
+					<div class="product-body">
+						<h3>Model-24</h3>
+						<p class="ptype">French Door</p>
+						<ul class="specs">
+							<li>Общий объём: <strong>478 л</strong></li>
+							<li>Холодильная камера: <strong>227 л</strong></li>
+							<li>Морозильная камера: <strong>199 л</strong></li>
+							<li>Энергия: <strong>B</strong></li>
+							<li>Шум: <strong>44 дБ</strong></li>
+						</ul>
+						<div class="product-actions">
+							<button class="btn add-to-order" data-model="Model-24">Добавить в заказ</button>
+						</div>
+					</div>
+				</article>
+
+				<!-- Model-25 -->
+				<article class="product" data-model="Model-25" data-type="Однокамерный">
+					<div class="product-media">
+						<img src="https://cdn.pixabay.com/photo/2015/02/22/08/17/kitchen-644913_1280.jpg" alt="Model-25">
+					</div>
+					<div class="product-body">
+						<h3>Model-25</h3>
+						<p class="ptype">Однокамерный</p>
+						<ul class="specs">
+							<li>Общий объём: <strong>290 л</strong></li>
+							<li>Холодильная камера: <strong>142 л</strong></li>
+							<li>Морозильная камера: <strong>193 л</strong></li>
+							<li>Энергия: <strong>B</strong></li>
+							<li>Шум: <strong>39 дБ</strong></li>
+						</ul>
+						<div class="product-actions">
+							<button class="btn add-to-order" data-model="Model-25">Добавить в заказ</button>
+						</div>
+					</div>
+				</article>
+
+			</div>
+		</section>
+
+		<section id="reviews" class="section reviews">
+			<h2>Отзывы клиентов</h2>
+			<div class="reviews-grid">
+				<div class="review">
+					<button class="review-btn">Анна, Москва</button>
+					<div class="review-content">
+						<p>Отличное качество и тихая работа. Купили Model-01 — довольны!</p>
+					</div>
+				</div>
+
+				<div class="review">
+					<button class="review-btn">Дмитрий, Санкт-Петербург</button>
+					<div class="review-content">
+						<p>Наш ресторан использует Model-11 — надёжно и мощно!</p>
+					</div>
+				</div>
+
+				<div class="review">
+					<button class="review-btn">Ольга, Екатеринбург</button>
+					<div class="review-content">
+						<p>Современный дизайн и экономия электроэнергии. Рекомендую!</p>
+					</div>
+				</div>
+
+				<div class="review">
+					<button class="review-btn">Игорь, Нижний Новгород</button>
+					<div class="review-content">
+						<p>Отличная сборка, всё продумано. Model-06 работает идеально!</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="partners" class="section partners">
+			<h2>Наши партнёры</h2>
+			<div class="partners-grid">
+				<img src="https://via.placeholder.com/160x80?text=Metro" alt="Metro">
+				<img src="https://via.placeholder.com/160x80?text=Magnit" alt="Magnit">
+				<img src="https://via.placeholder.com/160x80?text=Auchan" alt="Auchan">
+				<img src="https://via.placeholder.com/160x80?text=Lenta" alt="Lenta">
+				<img src="https://via.placeholder.com/160x80?text=O'Key" alt="O'Key">
+				<img src="https://via.placeholder.com/160x80?text=Perekrestok" alt="Perekrestok">
+				<img src="https://via.placeholder.com/160x80?text=Local+Cafe" alt="Local Cafe">
+				<img src="https://via.placeholder.com/160x80?text=Shop+Pro" alt="Shop Pro">
+			</div>
+		</section>
+
+		<section id="order" class="section order">
+			<h2>Онлайн-заказ</h2>
+			<form id="orderForm" class="order-form" autocomplete="on">
+				<label for="name">Ваше имя</label>
+				<input id="name" name="name" type="text" required>
+
+				<label for="email">Email</label>
+				<input id="email" name="email" type="email" required>
+
+				<label for="phone">Телефон</label>
+				<input id="phone" name="phone" type="tel" placeholder="+7..." required>
+
+				<label for="modelSelect">Выберите модель</label>
+				<select id="modelSelect" name="model" required>
+					<option value="">-- выберите --</option>
+					<!-- Все 25 моделей -->
+					<option>Model-01</option>
+					<option>Model-02</option>
+					<option>Model-03</option>
+					<option>Model-04</option>
+					<option>Model-05</option>
+					<option>Model-06</option>
+					<option>Model-07</option>
+					<option>Model-08</option>
+					<option>Model-09</option>
+					<option>Model-10</option>
+					<option>Model-11</option>
+					<option>Model-12</option>
+					<option>Model-13</option>
+					<option>Model-14</option>
+					<option>Model-15</option>
+					<option>Model-16</option>
+					<option>Model-17</option>
+					<option>Model-18</option>
+					<option>Model-19</option>
+					<option>Model-20</option>
+					<option>Model-21</option>
+					<option>Model-22</option>
+					<option>Model-23</option>
+					<option>Model-24</option>
+					<option>Model-25</option>
+				</select>
+
+				<label for="comment">Комментарий</label>
+				<textarea id="comment" name="comment" rows="4"></textarea>
+
+				<div class="form-actions">
+					<button type="submit" class="btn">Отправить заказ</button>
+					<button type="button" id="clearForm" class="btn btn-outline">Очистить</button>
+				</div>
+
+				<p id="formMessage" class="form-message hidden" role="status"></p>
+			</form>
+		</section>
+
+		<section id="contact" class="section contact">
+			<h2>Контакты</h2>
+			<div class="contact-grid">
+				<div>
+					<p>Email: <a href="mailto:info@frosten.ru">info@frosten.ru</a></p>
+					<p>Телефон: <a href="tel:+79692862105">8 969 286 2105</a></p>
+					<p>Адрес: ул. 64-й Армии, 117</p>
+				</div>
+				<div class="map-placeholder" aria-hidden="true">
+					<!-- Здесь можно вставить карту (iframe) при желании -->
+					<p>Карта (можно подключить Google Maps или Яндекс.Карты)</p>
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+	<footer>
+		<p>© 2025 Frosten. Все права защищены.</p>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+
+</html>
